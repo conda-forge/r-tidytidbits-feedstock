@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = '0.2.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytidbits_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytidbits/tidytidbits_{{ version }}.tar.gz
-  sha256: 67d260703331410d9bc7503de2146ff6f6577006f05cdf28fcd5ba83ec1b9394
+  sha256: 279b4f3af569d05cddc55c5979867686450a11a4c29d445c9ab2064e2e9ad8c3
 
 build:
   merge_build_host: True  # [win]
@@ -72,7 +72,7 @@ extra:
 # Package: tidytidbits
 # Type: Package
 # Title: A Collection of Tools and Helpers Extending the Tidyverse
-# Version: 0.1.0
+# Version: 0.2.1
 # Author: Marcel Wiesweg [aut, cre]
 # Maintainer: Marcel Wiesweg <marcel.wiesweg@uk-essen.de>
 # Authors@R: person("Marcel", "Wiesweg", email = "marcel.wiesweg@uk-essen.de", role = c("aut", "cre"))
@@ -82,8 +82,8 @@ extra:
 # LazyData: true
 # Imports: utils, stats, grDevices, methods, dplyr, forcats, grid, purrr, stringr, tibble, tidyr, tidyselect, extrafont, rlang, magrittr
 # Suggests: survival
-# RoxygenNote: 6.0.1
+# RoxygenNote: 6.1.1
 # NeedsCompilation: no
-# Packaged: 2018-08-20 12:27:39 UTC; wiesweg
+# Packaged: 2019-07-01 14:56:19 UTC; wiesweg
 # Repository: CRAN
-# Date/Publication: 2018-08-24 15:50:07 UTC
+# Date/Publication: 2019-07-01 16:00:03 UTC
