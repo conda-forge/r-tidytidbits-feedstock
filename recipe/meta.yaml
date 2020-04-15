@@ -1,4 +1,4 @@
-{% set version = '0.2.1' %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytidbits_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytidbits/tidytidbits_{{ version }}.tar.gz
-  sha256: 279b4f3af569d05cddc55c5979867686450a11a4c29d445c9ab2064e2e9ad8c3
+  sha256: edfcfcfe3f19f114940bafed691d6ed20c1e6b332135a14e1977caf39d5dc1f3
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -56,14 +56,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=tidytidbits
   license: GPL-3
-  summary: A selection of various tools to extend a data analysis workflow based on the 'tidyverse'
-    packages. This includes high-level data frame editing methods (in the style of 'mutate'/'mutate_at'),
-    some methods in the style of 'purrr' and 'forcats', 'lookup' methods for dict-like
-    lists, a generic method for lumping a data frame by a given count, various low-level
-    methods for special treatment of 'NA' values, 'python'-style tuple-assignment and
-    'truthy'/'falsy' checks, saving to PDF and PNG from a pipe and various small utilities.
+  summary: A selection of various tools to extend a data analysis workflow based on the 'tidyverse' packages. This includes high-level data frame editing methods
+    (in the style of 'mutate'/'mutate_at'), some methods in the style of 'purrr' and 'forcats', 'lookup' methods for dict-like lists, a generic method for lumping
+    a data frame by a given count, various low-level methods for special treatment of 'NA' values, 'python'-style tuple-assignment and 'truthy'/'falsy' checks, saving
+    to PDF and PNG from a pipe and various small utilities.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
