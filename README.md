@@ -3,7 +3,7 @@ About r-tidytidbits
 
 Home: https://CRAN.R-project.org/package=tidytidbits
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidytidbits-feedstock/blob/master/LICENSE.txt)
 
@@ -36,6 +36,7 @@ Installing `r-tidytidbits` from the `conda-forge` channel can be achieved by add
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-tidytidbits` can be installed with:
