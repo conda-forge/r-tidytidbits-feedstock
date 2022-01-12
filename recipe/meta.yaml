@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytidbits_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytidbits/tidytidbits_{{ version }}.tar.gz
-  sha256: a03fde7f6750882ac84a9786c2948e2a8ea84700141a7a08e0102cebfa222aea
+  sha256: 562edc5822f411a39e926e11c0a350f962ee451b274b4ec5c67bfcf370306bea
 
 build:
   merge_build_host: true  # [win]
