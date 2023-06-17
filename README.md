@@ -1,11 +1,11 @@
-About r-tidytidbits
-===================
+About r-tidytidbits-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidytidbits-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=tidytidbits
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidytidbits-feedstock/blob/main/LICENSE.txt)
 
 Summary: A selection of various tools to extend a data analysis workflow based on the 'tidyverse' packages. This includes high-level data frame editing methods (in the style of 'mutate'/'mutate_at'), some methods in the style of 'purrr' and 'forcats', 'lookup' methods for dict-like lists, a generic method for lumping a data frame by a given count, various low-level methods for special treatment of 'NA' values, 'python'-style tuple-assignment and 'truthy'/'falsy' checks, saving to PDF and PNG from a pipe and various small utilities.
 
