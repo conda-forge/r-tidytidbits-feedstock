@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytidbits_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytidbits/tidytidbits_{{ version }}.tar.gz
-  sha256: e87093aab927c2d34626b88cdff1f2cfd3883ffde778f8d5794ad6b88a0975fd
+  sha256: 8c6675302430d4edc5590743ea4c824b9772195911e92631812e4f2200f451b6
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
